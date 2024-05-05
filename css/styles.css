@@ -478,9 +478,9 @@ body {
     font-size: x-large;
 }
 
-.shape {
+/* .shape {
     transform: skew(340deg);
-}
+} */
 
 .shape-link {
     text-decoration: none;
@@ -541,6 +541,15 @@ body {
     width: 25%;
     position: absolute;
     left: 90%;
+}
+
+.shape-box {
+    width: 45%;
+    right: 0;
+    position: absolute;
+    height: 100%;
+    background-color: rgb(255 255 255 / 50%);
+    box-shadow: inset 0px 0px 25px 5px #000000;
 }
 
 .bg {
@@ -749,13 +758,13 @@ body {
     }
 
     .shape-3 {
-        width: 35%;
-        left: 65%;
+        width: 75%;
+        left: 25%;
     }
     
     .shape-2 {
-        width: 15%;
-        left: 55%;
+        width: 25%;
+        left: 0%;
     }
 
     .shape-4 {
@@ -773,6 +782,12 @@ body {
         left: 85%;
     }
 
+    .shape-box:hover > .shape-2 {
+        width: 100%;
+        left: -75%;
+        transition: all 1s ease-in-out;
+    }
+
     .shape-3:hover + .shape-2 {
         width: 50%;
         left: 20%;
@@ -785,7 +800,7 @@ body {
         transition: all 1s ease-in-out;
     }
 
-    .bg:hover {
+    /* .bg:hover {
         background-size: 150%;
         transition: all 2s ease-in-out;
     }
@@ -793,7 +808,7 @@ body {
     .bg:hover .bg-opaque {
         box-shadow: inset 0px 0px 30px 10px #000000;
         transition: all 2s ease-in-out;
-    }
+    } */
 
     .section-head {
         display: flex;
