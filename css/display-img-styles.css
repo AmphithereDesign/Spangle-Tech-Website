@@ -28,7 +28,7 @@
 }
 
 li {
-    height: 40vh;
+    height: 42vh;
     /* flex-grow: 1; */
     list-style: none;
     padding: 12px;
@@ -44,6 +44,11 @@ li {
     transition: all 0.5s;
     border-radius: 50px;
     box-shadow: 0 2px 5px 0px rgb(0 0 0 / 77%);
+}
+
+.img-inline {
+    max-height: 45vh;
+    border-radius: 25%;
 }
 
 @media only screen and (min-width: 768px){
