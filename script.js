@@ -112,5 +112,9 @@ function refreshTime() {
     document.getElementById('time').innerHTML = datetime; 
 }
 
+// $(window).load(function() {
+//     $("body").removeClass("preload");
+// });
+
 setInterval(refreshTime, 1000);
 // ---
