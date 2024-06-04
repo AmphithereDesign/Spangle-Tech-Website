@@ -27,12 +27,32 @@
     justify-content: center;
 }
 
+.di-partner-banner {
+    position: relative;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+}
+
+.banner-item {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
 li {
     height: 42vh;
-    /* flex-grow: 1; */
     list-style: none;
     padding: 12px;
-    /*     overflow: hidden; */
+    align-content: center;
+    display: inline;
 }
 
 .img-item {
