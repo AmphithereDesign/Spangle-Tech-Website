@@ -21,46 +21,81 @@
     transform: skew(340deg);
 }
 
+.banner-container {
+    background-color: white;
+    margin: 0 -5rem;
+}
+
+.di-partner-banner {
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+    animation: slide 50s infinite linear, fade 50s 0s infinite linear;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-364%);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    10% {
+        opacity: 1; /* Keep opacity at 0 for a short duration (fade-in) */
+    }
+    90% {
+        opacity: 1; /* Maintain full opacity during slide display */
+    }
+    100% {
+        opacity: 0; /* Fade out at the end of the slide display */
+    }
+}
+
+.banner-item {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 87%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    transition: all 0.5s;
+}
+
+.di-partner-banner > li {
+    height: 18vh;
+    list-style: none;
+    align-content: center;
+    display: inline-block;
+    padding: 0 12vw 0;
+}
+
+.img-container > li {
+    height: 40vh;
+    /* flex-grow: 1; */
+    list-style: none;
+    padding: 12px;
+    overflow: hidden;
+}
+
 .img-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.di-partner-banner {
-    position: relative;
-    filter: drop-shadow(0 0 10px #0003);
-    perspective: 100px;
-}
-
-.banner-item {
-    position: absolute;
-    background-color: white;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    overflow-x: scroll;
-    counter-reset: item;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-}
-
-li {
-    height: 42vh;
-    list-style: none;
-    padding: 12px;
-    align-content: center;
-    display: inline;
-}
-
 .img-item {
-    max-height: 87%;    
+    max-height: 87%;
     min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
-    box-shadow: 5px 5px 5px transparent !important;
     transition: all 0.5s;
     border-radius: 50px;
     box-shadow: 0 2px 5px 0px rgb(0 0 0 / 77%);
