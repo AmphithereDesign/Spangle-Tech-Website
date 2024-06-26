@@ -30,7 +30,7 @@
     display: flex;
     position: relative;
     white-space: nowrap;
-    animation: slide 50s infinite linear, fade 50s 0s infinite linear;
+    animation: slide 50s infinite linear, fade 100s 0s infinite linear;
 }
 
 @keyframes slide {
