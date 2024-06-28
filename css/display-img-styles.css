@@ -102,7 +102,7 @@
 }
 
 .img-inline {
-    max-height: 45vh;
+    max-height: 60vh;
     border-radius: 25%;
 }
 
@@ -118,6 +118,11 @@
         box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.767);
         transform: scale(1.08);
         transition: all 0.5s;
+    }
+
+    .img-inline {
+        max-height: 45vh;
+        border-radius: 25%;
     }
 }
 

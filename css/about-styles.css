@@ -1,8 +1,8 @@
-.ab-section {
-    padding: 2rem 0;
+.ab-section, .ab-story-section {
+    padding: 2rem .5rem;
 }
 
-.ab-story > p {
+.ab-story > p, .ab-story-section > p {
     text-align: left;
     text-indent: 5%;
 }
@@ -65,5 +65,10 @@
 @media only screen and (min-width: 768px){
     .ab-section {
         padding: 2rem 5rem;
+    }
+
+    .ab-story-section {
+        display:flex;
+        padding: 2rem 0;
     }
 }
