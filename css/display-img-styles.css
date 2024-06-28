@@ -58,15 +58,13 @@
 }
 
 .banner-item {
-    flex: 0 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     max-height: 87%;
     min-width: 100%;
     object-fit: cover;
-    vertical-align: bottom;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 .di-partner-banner > li {
@@ -78,8 +76,7 @@
 }
 
 .img-container > li {
-    height: 40vh;
-    /* flex-grow: 1; */
+    height: auto;
     list-style: none;
     padding: 12px;
     overflow: hidden;
@@ -92,8 +89,8 @@
 }
 
 .img-item {
-    max-height: 87%;
-    min-width: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
     vertical-align: bottom;
     transition: all 0.5s;
@@ -112,6 +109,10 @@
         padding: 2rem 5rem;
     }
 
+    .banner-item {
+        transition: all 0.5s;
+    }
+
     img:hover {
         filter: blur(0px);
         opacity: 1;
@@ -123,6 +124,23 @@
     .img-inline {
         max-height: 45vh;
         border-radius: 25%;
+    }
+
+    .img-item {
+        max-height: 87%;
+        min-width: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+        transition: all 0.5s;
+        border-radius: 50px;
+        box-shadow: 0 2px 5px 0px rgb(0 0 0 / 77%);
+    }
+
+    .img-container > li {
+        height: 40vh;
+        list-style: none;
+        padding: 12px;
+        overflow: hidden;
     }
 }
 
