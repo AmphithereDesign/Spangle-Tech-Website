@@ -39,32 +39,10 @@
     transform: skew(340deg);
 }
 
-.card-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card-section > li {
-    list-style: none;
-    padding: 12px;
-    flex: 1;
-    background-color: #5b0e938a;
-    margin: 3rem;
-    border-radius: 25px;
-}
-
-.card-break {
-    height: 1px;
-    background-color: #ffffff;
-    position: relative;
-    z-index: 2;
-    margin: 1rem 2rem;
-}
-
 @media only screen and (min-width: 768px){
     .ab-section {
         padding: 2rem 5rem;
+        text-align: center;
     }
 
     .ab-story-section {

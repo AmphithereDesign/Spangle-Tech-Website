@@ -99,8 +99,13 @@
 }
 
 .img-inline {
-    max-height: 60vh;
+    max-height: 65vh;
     border-radius: 25%;
+    width: 100%;
+}
+
+.di-card-img {
+    max-height: inherit;
 }
 
 @media only screen and (min-width: 768px){
@@ -124,6 +129,7 @@
     .img-inline {
         max-height: 45vh;
         border-radius: 25%;
+        max-width: 50%;
     }
 
     .img-item {
