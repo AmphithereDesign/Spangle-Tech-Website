@@ -722,6 +722,20 @@ body {
     font-size: 14px;
 }
 
+/* Google Embed classes specifically DON'T TOUCH!!!!*/
+.embededsocial-hashtag > a.feed-powered-by-es.feed-powered-by-es-center {
+    left: unset;
+    right: unset;
+}
+
+.es-widget-container > .es-header-container-responsive.es-widget-header-container-template {
+    display: none;
+}
+
+.swiper-button {
+    display: none;
+}
+
 @media only screen and (min-width: 768px){
 
     #content-wrap {
@@ -916,4 +930,34 @@ body {
     .ft-lbl {
         margin: 0;
     }
+
+    /* Google Embed classes specifically DON'T TOUCH!!!!*/
+    .review-cascade > a.feed-powered-by-es.feed-powered-by-es-center {
+        left: unset;
+    }
+
+    .es-widget-container > .es-header-container-responsive.es-widget-header-container-template {
+        display: none;
+    }
+
+    .fb-review-cascade > .sk_fb_page_reviews_grid {
+        height: 100% !important;
+    }
+
+    .fb-review-cascade {
+        height: 100% !important;
+        
+    }
+
+    .card-section > li > .sk-ww-fb-page-reviews:last-child {
+        font-size: 0 !important;
+    }
+
+    .card-section > li > .sk-ww-fb-page-reviews {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-radius: 5%;
+    }
+
+
 }
