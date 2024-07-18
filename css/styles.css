@@ -732,8 +732,22 @@ body {
     display: none;
 }
 
-.swiper-button {
-    display: none;
+/* Facebook Embed classes specifically DON'T TOUCH!!!!*/
+.fb-review-cascade > .sk_fb_page_reviews_grid {
+    height: 100% !important;
+}
+
+.fb-review-cascade {
+    height: 80% !important;
+    
+}
+
+.card-section > li > .sk-ww-fb-page-reviews {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 25px 0 0 25px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--secondary);
 }
 
 @media only screen and (min-width: 768px){
@@ -946,12 +960,8 @@ body {
     }
 
     .fb-review-cascade {
-        height: 100% !important;
+        height: 80% !important;
         
-    }
-
-    .card-section > li > .sk-ww-fb-page-reviews:last-child {
-        font-size: 0 !important;
     }
 
     .card-section > li > .sk-ww-fb-page-reviews {
